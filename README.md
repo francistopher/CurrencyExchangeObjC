@@ -8,6 +8,7 @@ Retrofied version
 
 ## To do 
 
-- scrape forex rates from [this](https://finance.yahoo.com/currencies/)
-- 
+- idk how yet but wait for entire HTML data to load
+- scrape forex rates from [this](https://finance.yahoo.com/currencies/) with regex
+
 
