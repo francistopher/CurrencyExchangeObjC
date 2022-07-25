@@ -7,17 +7,16 @@
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
-#import "SiteScraper.h"
+#import "ResponseFetcher.h"
 
 int main(int argc, char * argv[]) {
     NSString * appDelegateClassName;
-    SiteScraper *siteScraper;
+    ResponseFetcher* responseFetcher;
     @autoreleasepool {
-        // Setup code that might create autoreleased objects goes here.
-        siteScraper = [SiteScraper sharedSiteScraper];
-        [siteScraper setURL:@"https://stackoverflow.com/questions/11097220/unable-to-download-whole-html-page-objective-c-xcode"];
-        NSString* siteContents = [siteScraper getStringHTML];
-        NSLog(@"%@", siteContents);
+        responseFetcher = [ResponseFetcher sharedResponseFetcher];
+        [responseFetcher setURLString:@"https://api.exchangerate.host/latest?symbols=USD,EUR,CNY,GBP,RUB,INR&base=USD"]; // url call
+        NSString* siteContents = [responseFetcher getHTMLString]; // url call's return
+        NSLog(@"%@", siteContents); // print url call's return
         appDelegateClassName = NSStringFromClass([AppDelegate class]);
     }
     return UIApplicationMain(argc, argv, nil, appDelegateClassName);

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B2530E5C288D177D001D041D /* SiteScraper.m in Sources */ = {isa = PBXBuildFile; fileRef = B2530E5A288D177D001D041D /* SiteScraper.m */; };
+		B2530E5C288D177D001D041D /* ResponseFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = B2530E5A288D177D001D041D /* ResponseFetcher.m */; };
 		B26340C8288BBF56009C005D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B26340C7288BBF56009C005D /* AppDelegate.m */; };
 		B26340CB288BBF56009C005D /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B26340CA288BBF56009C005D /* SceneDelegate.m */; };
 		B26340CE288BBF56009C005D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B26340CD288BBF56009C005D /* ViewController.m */; };
@@ -39,8 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B2530E5A288D177D001D041D /* SiteScraper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiteScraper.m; sourceTree = "<group>"; };
-		B2530E5B288D177D001D041D /* SiteScraper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiteScraper.h; sourceTree = "<group>"; };
+		B2530E5A288D177D001D041D /* ResponseFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponseFetcher.m; sourceTree = "<group>"; };
+		B2530E5B288D177D001D041D /* ResponseFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponseFetcher.h; sourceTree = "<group>"; };
 		B26340C3288BBF56009C005D /* CurrencyExchange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurrencyExchange.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B26340C6288BBF56009C005D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B26340C7288BBF56009C005D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -170,8 +170,8 @@
 		B2EC4358288D072400448240 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				B2530E5B288D177D001D041D /* SiteScraper.h */,
-				B2530E5A288D177D001D041D /* SiteScraper.m */,
+				B2530E5B288D177D001D041D /* ResponseFetcher.h */,
+				B2530E5A288D177D001D041D /* ResponseFetcher.m */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -307,7 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B26340DC288BBF57009C005D /* main.m in Sources */,
-				B2530E5C288D177D001D041D /* SiteScraper.m in Sources */,
+				B2530E5C288D177D001D041D /* ResponseFetcher.m in Sources */,
 				B26340CE288BBF56009C005D /* ViewController.m in Sources */,
 				B26340C8288BBF56009C005D /* AppDelegate.m in Sources */,
 				B26340CB288BBF56009C005D /* SceneDelegate.m in Sources */,
