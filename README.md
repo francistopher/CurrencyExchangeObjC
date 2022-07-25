@@ -27,14 +27,11 @@ Retrofied version
 	- Present Currency Exchange Logo
 		- Fade in first letter then the next and so on
 		- Present Fetching currency exchanges ...
-			Success
-			Failure
+			- Success
+			- Failure
 
 
 ## Utilities
 
 - RequestFetcher - fetches url address' reponse
 - Currency Converter - provided a dictionary of exchanges performs conversions *not started*
-
-
-
