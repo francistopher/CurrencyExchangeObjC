@@ -6,7 +6,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "IntroController.h"
 
 @interface AppDelegate ()
 
