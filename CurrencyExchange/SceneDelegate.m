@@ -7,7 +7,9 @@
 
 #import "SceneDelegate.h"
 #import "AppDelegate.h"
-
+#import "UIKit/UIWindowScene.h"
+#import "UIKit/UINavigationController.h"
+#import "ViewController.h"
 @interface SceneDelegate ()
 
 @end
@@ -19,6 +21,13 @@
     // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
     // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
     // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+    UIWindowScene *windowScene = (UIWindowScene *) scene; // morphed the UIScene into a UIWindowScene cause your phone is technically a tiny window
+    _window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]]; // initialize variable directly with the size of the "tiny window"
+    ViewController* viewController = [[ViewController alloc] init]; // now initialize the custom ViewController
+    UINavigationController* navigationController = [[UINavigationController alloc] initWithRootViewController:viewController]; // initialize stack based scene using your view controller as the root
+    _window.rootViewController = navigationController; // set that stack based scene as your window
+    [_window makeKeyAndVisible]; // reveal your window/magic
+    _window.windowScene = windowScene; // shine the light underneath for us to see
 }
 
 
