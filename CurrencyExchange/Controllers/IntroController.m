@@ -45,6 +45,7 @@ typedef NS_ENUM(NSUInteger, Acronym) {
 //        letters = [lettersData mutableCopy];
 //
 //        //*(letters + 0) = 'D';
+        free(lettersC);
         
     }
     return self;
